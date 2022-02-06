@@ -3,10 +3,10 @@ import express from "express";
 import logger from "morgan";
 import cors from "cors";
 // routes
-import indexRouter from "../routes/index";
-import userRouter from "../routes/user.js";
-import chatRoomRouter from "../routes/chatRoom.js";
-import deleteRouter from "../routes/delete.js";
+import indexRouter from "./routes/index";
+import userRouter from "./routes/user.js";
+import chatRoomRouter from "./routes/chatRoom.js";
+import deleteRouter from "./routes/delete.js";
 // middlewares
 import { decode } from '../middlewares/jwt'
 
