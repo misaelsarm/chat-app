@@ -1,8 +1,8 @@
 import express from 'express';
 // controllers
-import users from '../controllers/user.js';
+import users from '../controllers/user';
 // middlewares
-import { encode } from '../middlewares/jwt.js';
+import { encode } from '../middlewares/jwt';
 
 const router = express.Router();
 
