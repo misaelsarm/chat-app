@@ -1,4 +1,6 @@
+import { Request, Response } from "express";
+
 export default {
-  deleteRoomById: async (req, res) => {},
-  deleteMessageById: async (req, res) => {},
+  deleteRoomById: async (req: Request, res: Response) => { },
+  deleteMessageById: async (req: Request, res: Response) => { },
 }

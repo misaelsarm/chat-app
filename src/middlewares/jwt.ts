@@ -1,5 +1,6 @@
+import { Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 
-export const decode = (req, res, next) => {}
+export const decode = (req:Request, res:Response) => {}
 
-export const encode = async (req, res, next) => {}
+export const encode = async (req:Request, res:Response) => {}

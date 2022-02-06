@@ -13,7 +13,7 @@ const user_js_1 = __importDefault(require("./routes/user.js"));
 const chatRoom_js_1 = __importDefault(require("./routes/chatRoom.js"));
 const delete_js_1 = __importDefault(require("./routes/delete.js"));
 // middlewares
-const jwt_1 = require("../middlewares/jwt");
+const jwt_1 = require("./middlewares/jwt");
 const app = (0, express_1.default)();
 /** Get port from environment and store in Express. */
 const port = process.env.PORT || "5001";

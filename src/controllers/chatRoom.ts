@@ -1,7 +1,9 @@
+import { Request, Response } from "express";
+
 export default {
-  initiate: async (req, res) => { },
-  postMessage: async (req, res) => { },
-  getRecentConversation: async (req, res) => { },
-  getConversationByRoomId: async (req, res) => { },
-  markConversationReadByRoomId: async (req, res) => { },
+  initiate: async (req: Request, res: Response) => { },
+  postMessage: async (req: Request, res: Response) => { },
+  getRecentConversation: async (req: Request, res: Response) => { },
+  getConversationByRoomId: async (req: Request, res: Response) => { },
+  markConversationReadByRoomId: async (req: Request, res: Response) => { },
 }

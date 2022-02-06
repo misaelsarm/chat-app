@@ -8,7 +8,7 @@ import userRouter from "./routes/user.js";
 import chatRoomRouter from "./routes/chatRoom.js";
 import deleteRouter from "./routes/delete.js";
 // middlewares
-import { decode } from '../middlewares/jwt'
+import { decode } from './middlewares/jwt'
 
 const app = express();
 
