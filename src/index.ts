@@ -2,6 +2,8 @@ import http from "http";
 import express from "express";
 import logger from "morgan";
 import cors from "cors";
+import dotenv from 'dotenv'
+dotenv.config()
 // routes
 import indexRouter from "./routes/index";
 import userRouter from "./routes/user.js";
@@ -9,6 +11,7 @@ import chatRoomRouter from "./routes/chatRoom.js";
 import deleteRouter from "./routes/delete.js";
 // middlewares
 import { decode } from './middlewares/jwt'
+import { dbConnection } from "./database/config";
 
 const app = express();
 
@@ -19,6 +22,9 @@ app.use(cors())
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+// base de datos
+dbConnection()
 
 app.use("/", indexRouter);
 app.use("/users", userRouter);
